@@ -1,0 +1,149 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-color: hsl(225, 100%, 94%);
+  background-size: contain;
+  background-position: center -10rem;
+  background-attachment: fixed;
+}
+
+.order-container {
+  max-width: 40rem;
+  border-radius: 1.5rem;
+
+  overflow: hidden;
+  text-align: center;
+  margin-bottom: 5rem;
+  box-shadow: 0 0 3rem rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.image {
+  width: 40rem;
+  margin-bottom: 2.5rem;
+}
+
+.order-summary {
+  padding: 0rem 3rem;
+}
+.heading {
+  font-size: 2.4rem;
+  text-align: center;
+  color: hsl(223, 47%, 23%);
+  font-weight: 900;
+  margin-bottom: 1.5rem;
+}
+
+.description {
+  font-size: 1.6rem;
+  color: hsl(224, 23%, 55%);
+  max-width: 30rem;
+  display: inline-block;
+  margin-bottom: 1.5rem;
+}
+
+.annual-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: hsl(225, 100%, 98%);
+  padding: 2rem;
+  border-radius: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+.music-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.price-container {
+  text-align: left;
+}
+.sub-heading {
+  font-size: 1.7rem;
+  font-weight: 900;
+  color: hsl(223, 47%, 23%);
+  margin-bottom: 0.5rem;
+}
+
+.price {
+  font-size: 1.7rem;
+  color: hsl(224, 23%, 55%);
+}
+.change {
+  font-size: 1.5rem;
+  color: hsl(245, 75%, 52%);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.change:active {
+  color: hsla(245, 75%, 52%, 0.7);
+}
+
+.btn {
+  display: inline-block;
+  padding: 1.5rem 9rem;
+  border: none;
+  border-radius: 1.5rem;
+  background-color: hsl(245, 75%, 52%);
+  color: hsl(225, 100%, 98%);
+  font-size: 1.4rem;
+  font-weight: 900;
+  margin-bottom: 2.5rem;
+  box-shadow: 0 2.5rem 3.5rem hsla(245, 75%, 52%, 0.174);
+  cursor: pointer;
+}
+
+.btn:active {
+  background-color: hsla(245, 75%, 52%, 0.7);
+}
+
+h3 {
+  font-size: 1.4rem;
+  color: hsl(224, 23%, 55%);
+  font-weight: 900;
+  margin-bottom: 3.5rem;
+  cursor: pointer;
+}
+
+h3:active {
+  color: hsla(224, 23%, 55%, 0.7);
+}
+
+@media (max-width: 90em) {
+  body {
+    background-position: center 2rem;
+  }
+}
+
+@media (max-width: 28.125em) {
+  html {
+    font-size: 50%;
+  }
+
+  body {
+    background-image: url(./images/pattern-background-mobile.svg);
+  }
+
+  .footer-name {
+    text-decoration: none;
+  }
+}
